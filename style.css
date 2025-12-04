@@ -177,91 +177,83 @@
     transition: 0.35 ease;
 }
 .blog-section {
-    padding: 60px 0;
-    background: #f8f8f8;
-    text-align: center;
-}
-
-.blog-title {
-    font-size: 34px;
-    font-weight: 600;
-    margin-bottom: 50px;
-}
-
-.blog-container {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.blog-card {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100px; 
     background: #fff;
-    padding: 25px;
-    border-radius: 6px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    text-align: left;
-    transition: 0.3s;
+    margin-top:20px;
+}
+.blog-img {
+    background-image: url("https://st3.depositphotos.com/9999814/32019/i/450/depositphotos_320193190-stock-photo-office-desk-workspace-table-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.blog-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 28px rgba(0,0,0,0.15);
+.blog-img h2 {
+    color: #fff;
+    font-size: 40px;
+    /* margin-bottom:50px; */
 }
-
-.blog-date {
-    color: gray;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.blog-heading {
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.blog-text {
-    font-size: 15px;
-    color: #555;
+.blog-container {
+    width: 80%;
+    margin: -150px auto 0;   
+    padding: 30px;
+    /* height:200px; */
+    background: #fff;
     line-height: 1.5;
-    margin-bottom: 25px;
+    display: flex;
+    gap: 50px;
+    /* border-radius: 10px; */
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
 }
-
+.blog-card .blog-date{
+    margin-top:30px;
+    font-size: 18px;
+}
+.blog-card .blog-heading{
+    margin-top:15px;
+    font-size:28px;
+}
+.blog-card .blog-text{
+    font-size:20px;
+    text-align: justify;
+}
 .blog-author {
     display: flex;
     align-items: center;
-    gap: 12px;
-}
-
-.blog-author img {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-}
-
-.blog-author span {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.blog-dots {
+    gap: 15px;
     margin-top: 30px;
 }
-
+.blog-author img{
+    height:50px;
+    width:50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.blog-author span{
+    font-size:20px;
+    font-weight:600;
+}
+.blog-dots {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
 .blog-dots span {
     display: inline-block;
     width: 10px;
     height: 10px;
-    margin: 0 6px;
-    border-radius: 50%;
     background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
 }
-
 .blog-dots .active {
-    background: #f5a623; /* orange center like your design */
+    background: #000;
 }
-
 .footer-stats{
     background-color: #000;
     height:300px;
