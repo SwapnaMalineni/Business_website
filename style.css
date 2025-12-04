@@ -7,7 +7,7 @@
     position: absolute;    
     width: 100%;
     z-index: 100;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .top-header {
@@ -17,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     color: white;
-    backdrop-filter: blur(4px);
+   
 }
 .top-left{
     display: flex;
@@ -44,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(4px);
+   
 }
 .logo {
     font-size: 18px;
@@ -77,7 +77,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    position:Relative;
+    /* position:Relative; */
     /* filter:brightness(85%); */
 }
 
@@ -85,7 +85,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(110, 109, 109, 0.45); 
+    background: rgba(0,0,0,0.3); 
 }   
 
 .overlay{
@@ -110,18 +110,18 @@
     padding:16px 40px;
     font-weight: 500;
     border:none;
-    border-radius: 5px;
+    border-radius: 8px;
     color:white;
     background-color: hwb(169 9% 3%);
 }
 .features {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 70px;
+  gap: 80px;
   width: 85%;
-  row-gap:70px;
+  row-gap:80px;
   margin: auto;
-  padding: 40px 120px;
+  padding: 50px 200px;
 }
 
 .feat {
@@ -181,7 +181,7 @@
     width: 100%;
     padding-bottom: 100px; 
     background: #fff;
-    margin-top:20px;
+    margin-top:40px;
 }
 .blog-img {
     background-image: url("https://st3.depositphotos.com/9999814/32019/i/450/depositphotos_320193190-stock-photo-office-desk-workspace-table-background.jpg");
@@ -192,6 +192,7 @@
     justify-content: center;
     align-items: center;
 }
+ 
 
 .blog-img h2 {
     color: #fff;
@@ -206,20 +207,21 @@
     background: #fff;
     line-height: 1.5;
     display: flex;
-    gap: 50px;
+    gap: 80px;
     /* border-radius: 10px; */
     box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
 }
 .blog-card .blog-date{
     margin-top:30px;
-    font-size: 18px;
+    font-size: 20px;
 }
 .blog-card .blog-heading{
     margin-top:15px;
-    font-size:28px;
+    font-size:30px;
 }
 .blog-card .blog-text{
-    font-size:20px;
+    margin-top: 10px;
+    font-size:22px;
     text-align: justify;
 }
 .blog-author {
@@ -235,11 +237,11 @@
     object-fit: cover;
 }
 .blog-author span{
-    font-size:20px;
+    font-size:22px;
     font-weight:600;
 }
 .blog-dots {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     margin-top: 40px;
 }
@@ -247,12 +249,14 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    background: #ccc;
+    /* background: hwb(0 98% 2%); */
+    border: 1px solid rgb(207, 163, 6);
     border-radius: 50%;
-    margin: 0 5px;
+    margin: 0 2px;
 }
 .blog-dots .active {
-    background: #000;
+    background: #dba206bf;
+    border:none;
 }
 .footer-stats{
     background-color: #000;
@@ -277,7 +281,7 @@
 .stat-box p{
     font-size:30px;
     color:white;
-    margin-top:12px;
+    margin-top:20px;
 }
 .footer-bottom {
     background-image: url("https://static.vecteezy.com/system/resources/thumbnails/041/164/235/small/top-view-work-desk-office-workspace-photo.jpg");
@@ -297,7 +301,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(165, 165, 165, 0.4); 
+    background: rgba(113, 112, 112, 0.4); 
     /* z-index: 1;  */
 }
 .footer-bottom > * {
@@ -305,7 +309,7 @@
     z-index: 2;
 }
 
-.back-to-top a {
+.back-to-top i{
     display: inline-block;
     color: #0b0b0b;
     font-size: 28px;
@@ -314,7 +318,7 @@
 }
 
 .footer-social i {
-    font-size: 46px;
+    font-size: 36px;
     color: black;
     margin: 0 40px;
 }
